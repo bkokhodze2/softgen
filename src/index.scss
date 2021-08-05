@@ -623,13 +623,12 @@ a {
 	}
 	.slide-item {
 		display: flex !important;
-		:last-child{
+		:last-child {
 			margin-right: 0rem;
 		}
 	}
 	.slider-item {
 		width: 100%;
-		
 	}
 	.array_list {
 		margin-right: 2.5rem;
@@ -760,7 +759,7 @@ a {
 		&__user {
 			margin-left: 0rem;
 		}
-		&__img { 
+		&__img {
 			width: 1rem;
 			height: 1rem;
 		}
