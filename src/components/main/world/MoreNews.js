@@ -38,7 +38,7 @@ export default class MoreNews extends Component {
 		console.log(this.state);
 
 		const view = [];
-
+ 
 		for (let index = 0; index < this.state.data.length; index = index + 2) {
 			view.push(
 				<div className="slide-item">
