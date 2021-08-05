@@ -622,13 +622,17 @@ a {
 		}
 	}
 	.slide-item {
-		display: flex;
+		display: flex !important;
+		:last-child{
+			margin-right: 0rem;
+		}
 	}
 	.slider-item {
 		width: 100%;
-		&:first-of-type {
-			margin-right: 2.5rem;
-		}
+		
+	}
+	.array_list {
+		margin-right: 2.5rem;
 	}
 	.trending {
 		width: calc(100% - 160px);
@@ -761,7 +765,9 @@ a {
 			height: 1rem;
 		}
 	}
-
+	.array_list {
+		margin-right: 0rem !important;
+	}
 	.header {
 		padding: 0 1rem;
 		&__burger {
@@ -795,7 +801,7 @@ a {
 		height: 18.75rem;
 	}
 	.slide-item {
-		flex-direction: column;
+		flex-direction: column !important;
 	}
 	.slider-item__timeWrap {
 		margin-bottom: unset;

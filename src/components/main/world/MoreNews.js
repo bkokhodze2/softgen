@@ -41,10 +41,10 @@ export default class MoreNews extends Component {
 
 		for (let index = 0; index < this.state.data.length; index = index + 2) {
 			view.push(
-				<>
-					<SlideItem item={this.state.data[index]} />
-					<SlideItem item={this.state.data[index + 1]} />
-				</>
+				<div className="slide-item">
+					<SlideItem className="slider-item" item={this.state.data[index]} />
+					<SlideItem  item={this.state.data[index + 1]} />
+				</div>
 			);
 		}
 
@@ -67,7 +67,7 @@ export default class MoreNews extends Component {
 						</button>
 					</div>
 				</div>
-				<Slider ref={(c) => (this.slider = c)} {...settings}>
+				<Slider  ref={(c) => (this.slider = c)} {...settings}>
 					{view}
 				</Slider>
 			</div>
